@@ -38,4 +38,4 @@ for event in longpoll.listen():
                                                                                      'я на всякий уточню, у меня мозги пока маленькие, не могу все запомнить, сорян')
     if event.type == VkEventType.MESSAGE_NEW and event.to_me:
         if event.user_id == 480878879:
-            vk.messages.send(user_id=4808788791, random_id=randint(366, 777), message='Давид спит, как проснется, я ему скажу, он ответит, ты пока иди собирайся, пусть спит ну')
+            vk.messages.send(user_id=480878879, random_id=randint(366, 777), message='Давид спит, как проснется, я ему скажу, он ответит, ты пока иди собирайся, пусть спит ну')
