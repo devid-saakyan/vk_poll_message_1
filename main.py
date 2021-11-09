@@ -30,11 +30,12 @@ longpoll = VkLongPoll(vk_session)
 
 for event in longpoll.listen():
     if event.type == VkEventType.USER_ONLINE:
-        if get_eva_status(332161491) and not flag:
+        if get_eva_status(480878879) and not flag:
             flag = True
-            vk.messages.send(user_id=332161491, random_id=randint(366, 777), message='Доброе утро, Евочка\nЭто пишет личный робот Давида\n'
-                                                                                     'Он сейчас спит, однако попросил чтобы я пожелал тебе хорошего'
-                                                                                     'и продуктивного дня')
+            vk.messages.send(user_id=480878879, random_id=randint(366, 777), message='Доброе утро, Евочка\nЭто пишет личный робот Давида\n'
+                                                                                     'Он сейчас спит, однако попросил чтобы я пожелал тебе хорошего '
+                                                                                     'и продуктивного дня\nИ вроде передал что любит тебя, но это не точно, 
+                                                                                     'я на всякий уточню, у меня мозги пока маленькие, не могу все запомнить, сорян')
     if event.type == VkEventType.MESSAGE_NEW and event.to_me:
-        if event.user_id == 332161491:
-            vk.messages.send(user_id=332161491, random_id=randint(366, 777), message='Давид спит, как проснется, я ему скажу, он ответит, ты пока иди собирайся, пусть спит ну')
+        if event.user_id == 480878879:
+            vk.messages.send(user_id=4808788791, random_id=randint(366, 777), message='Давид спит, как проснется, я ему скажу, он ответит, ты пока иди собирайся, пусть спит ну')
